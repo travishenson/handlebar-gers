@@ -1,0 +1,26 @@
+{
+  "name": "handlebar-gers",
+  "version": "1.0.0",
+  "description": "A simple app that utilizes Node, Express, MySQL, and Handlebars to allow users to dynamically update a database and have those changes reflected visually.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travishenson/handlebar-gers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/travishenson/handlebar-gers/issues"
+  },
+  "homepage": "https://github.com/travishenson/handlebar-gers#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.17.1"
+  }
+}
