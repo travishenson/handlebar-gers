@@ -1,3 +1,19 @@
 <h1>Handlebar-gers!</h1>
 
 <h2>The best way to eat a burger without actually eating a burger.</h2>
+
+<ul>
+  {{#each burgers}}
+    {{> burgers/burger-block devoured=false}}
+  {{/each}}
+</ul>
+
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="burger_name">Burger Name:</label>
+    <input type="text" id="burger_name" name="name">
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>
