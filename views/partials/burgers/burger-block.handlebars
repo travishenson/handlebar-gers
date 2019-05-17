@@ -1,7 +1,16 @@
-<li>
+<div class='burger-block'>
   {{burger_name}}
 
-  <button class='devour-burger' data-id="{{id}}">
-    {{#if devoured}}{{else}}Devour the Burger!{{/if}}
-  </button>
-</li>
+  {{#unless devoured}}
+    <button class='devour-burger' data-id="{{id}}">
+      Devour the Burger
+    </button>
+  {{/unless}}
+
+  {{#if devoured}}
+    <button class='reset-burger' data-id='{{id}}'>
+      Reset
+    </button>
+  {{/if}}
+</div>
+

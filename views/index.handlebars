@@ -1,19 +1,53 @@
-<h1>Handlebar-gers!</h1>
+<div class="flex-container header">
+  <div class="flex-content">
+    <h1 class='center-text'>HANDLEBAR-GERS!</h1>
 
-<h2>The best way to eat a burger without actually eating a burger.</h2>
+    <p class='center-text'>The best way to eat a burger without actually eating a burger.</p>
+  </div>
+</div>
 
-<ul>
-  {{#each burgers}}
-    {{> burgers/burger-block devoured=false}}
-  {{/each}}
-</ul>
+<div class="flex-container">
+  <div class='burger-form center-text'>
+  <h2>Add a Burger</h2>
+  <form class="create-form">
+    <div class="form-group">
+      <label for="burger_name">Burger Name:</label>
+      <input type="text" id="burger_name" name="name">
+    </div>
+    <div>
+      <button type="submit">Add Burger</button>
+    </div>
+  </form>
+  </div>
+  
+</div>
 
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="burger_name">Burger Name:</label>
-    <input type="text" id="burger_name" name="name">
+<div class="flex-container">
+  <div class="burger-list">
+    <div class='flex-content'>
+      <h3>Burgers on Deck:</h3>
+      <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devoured=false}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="burger-list">
+    <div class='flex-content'>
+    <h3>Devoured Burgers:</h3>
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burger-block devoured=true}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
   </div>
 
-  <button type="submit">Add Burger</button>
-</form>
+</div>
+

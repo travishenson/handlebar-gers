@@ -12,8 +12,8 @@ var burger = {
       cb(res);
     });
   },
-  updateOne: function (condition, cb) {
-    orm.updateOne("burgers", condition, function (res) {
+  updateOne: function (updatedValues, condition, cb) {
+    orm.updateOne("burgers", updatedValues, condition, function (res) {
       cb(res);
     });
   }

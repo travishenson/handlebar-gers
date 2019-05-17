@@ -1,0 +1,88 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #2c82c9;
+  color: white;
+  margin: 0 auto;
+  max-height: 100%;
+  padding: 0;
+}
+
+.header h1 {
+  letter-spacing: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-content {
+  padding: 1.5em;
+  flex-grow: 1;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.burger-form {
+  margin: 0 auto;
+  padding-bottom: 1.5em;
+}
+
+.burger-form button {
+  margin: 1em;
+  padding: 0.5em 1em;
+  border: 2px solid #008CBA;
+  color: #008CBA;
+  font-size: 16px;
+  border-radius: 12px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.burger-form button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.burger-list {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.burger-list li {
+  margin: 1em;
+  list-style: none;
+}
+
+.burger-list button {
+  float: right;
+  padding: 0.5em 1em;
+  background-color: #008CBA;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.burger-list button:hover {
+  background-color: #006CBA;
+}
+
+.burger-block {
+  margin: 1em;
+  padding: 1.5em;
+  border: 1px solid silver;
+  flex-grow: 0;
+}
