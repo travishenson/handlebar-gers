@@ -1,11 +1,25 @@
 # Handlebar-gers
+> Homework assignment: University of Richmond Full Stack Boot Camp 
 
-A simple app that utilizes Node, Express, MySQL, and Handlebars to allow users to dynamically update a database and have those changes reflected visually.
+## Overview
+ Handlebar-gers is a simple app that allows users to input data, submit it to a database, and then alter that data--all in the form of delicious hamburgers. When a user submits a burger, the app displays the burger on the left side -- waiting to be devoured. Once the user clicks the button to devour the burger, it moves to the right side of the page.
 
-## The Basics
+ ## Tools Used
+ Handlebar-gers is a full stack application that uses the following languages, tools, and libraries:
+ - HTML, CSS, and JavaScript
+ - Handlebars
+ - MySQL & Sequelize
+ - Express
+ - Node.js
+ - Deployed with Heroku
 
-- Handlebar-gers is a restaurant app that lets users input the names of burgers they'd like to eat and stores them in a database.
+## Screenshots & GIFs
+### Adding a Burger
+![Adding a burger in Handlebar-gers](./github-images/add-a-burger.gif)
 
-- Whenever a user submits a burger's name, the app will display the burger on the left side of the page -- waiting to be devoured.
+### Devouring and "Undevouring" a Burger
+![Devour and reset a burger](./github-images/devour-reset.gif)
 
-- Each burger in the waiting area also has a Devour it! button. When the user clicks it, the burger will move to the right side of the page.
+
+## Deployment
+Handlebar-gers is deployed with Heroku: https://handlebar-gers.herokuapp.com/
